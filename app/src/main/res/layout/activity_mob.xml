@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MobStore">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/selecctbrand"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="17dp"
+            android:gravity="center_horizontal"
+            android:text="Select Brand:"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/lay01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           >
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="15dp"
+
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp"
+                    app:contentPadding="11dp">
+
+                    <ImageView
+
+                        android:id="@+id/sam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:srcCompat="@drawable/samsung" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="15dp"
+
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp"
+                    app:contentPadding="12dp">
+
+                    <ImageView
+                        android:id="@+id/mi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:srcCompat="@drawable/mi" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="15dp"
+
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp"
+                    app:contentPadding="11dp">
+
+                    <ImageView
+
+                        android:id="@+id/apple"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:srcCompat="@drawable/apple_logo" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="15dp"
+
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp"
+                    app:contentPadding="13dp">
+
+                    <ImageView
+                        android:id="@+id/asus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:srcCompat="@drawable/asus_logo" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="135dp"
+                    android:layout_margin="15dp"
+
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp"
+                    app:contentPadding="13dp">
+
+                    <ImageView
+                        android:id="@+id/hua"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:srcCompat="@drawable/huawei" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/lay02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:text="Select Model:"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinnermob"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="18dp"
+                android:layout_marginStart="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="60dp"
+                android:text="Quantity"
+                android:layout_marginEnd="23dp"
+
+
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <LinearLayout
+
+                android:id="@+id/lay03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/decr"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="14dp"
+                    android:text="—"
+                    android:textSize="18sp"
+                    app:strokeColor="@color/primary_dark" />
+
+                <!--<EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="1"
+                    android:maxLength="3"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />-->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/quantity_edittext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="3"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="5"
+
+                        android:inputType="number"
+
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/incr"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="14dp"
+                    android:text="+"
+                    android:textSize="19sp"
+                    app:strokeColor="@color/primary_dark" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/acce"
+            android:layout_marginTop="24dp"
+            android:background="@color/primary_dark" />
+
+        <LinearLayout
+            android:id="@+id/lay5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:text="SUB TOTAL:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:text="$0"
+                android:id="@+id/pricemob"
+                android:textColor="@color/colorAccent"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/material_buttonpr"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:onClick="checkout"
+            android:text="proceed"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            />
+    </LinearLayout>
+</ScrollView>
+

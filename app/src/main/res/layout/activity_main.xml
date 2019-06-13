@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/HeaderBar"
+
+        android:elevation="4dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/my_toolbar"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_crop_original_grey_600_24dp"
+
+        android:contentDescription="@string/todo" />
+
+    <!---tools:srcCompat="@tools:sample/backgrounds/scenic[17]"-->
+       <!--<Button
+        android:id="@+id/but1"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+          android:layout_below="@id/imageView"
+           android:backgroundTint="@color/white"
+           android:textColor="@color/black"
+           style="@style/Widget.AppCompat.Button.Colored"
+           android:layout_marginStart="@dimen/activity_horizontal_margin"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="@dimen/activity_horizontal_margin"
+           android:layout_marginBottom="@dimen/activity_horizontal_margin"
+           android:textAlignment="center"
+           android:gravity="center"
+           android:drawableEnd="@drawable/ic_chevron_right_blue_grey_900_48dp"
+           android:paddingStart="10dp"
+           android:drawableStart="@drawable/comp"
+           android:paddingTop="12dp"
+           android:paddingEnd="10dp"
+           android:paddingBottom="12dp"
+           android:textSize="20sp"
+
+           android:text="Computer Store"/>-->
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/but1"
+        android:layout_width="match_parent"
+        android:elevation="0.4dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        app:icon="@drawable/ic_laptop_chromebook_black_48dp"
+        android:layout_below="@id/imageView"
+        android:text="Computer Store"
+        app:iconSize="48dp"
+        app:iconTint="@color/cyan_primary_dark"
+        android:textColor="@color/cyan_primary_dark"
+        android:textSize="21sp"
+        android:enabled="true"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/but2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0.4dp"
+    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+    app:icon="@drawable/ic_phone_android_white_24dp"
+    android:layout_below="@id/but1"
+    android:text="Mobile Store"
+    app:iconSize="48dp"
+    android:textSize="21sp"
+    app:iconTint="@color/deep_purple_primary_dark"
+    android:textColor="@color/deep_purple_primary_dark"
+    android:enabled="true"
+
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="26dp"/>
+    <!--android:backgroundTint="@color/white"
+ android:textColor="@color/black"
+    style="@style/Widget.AppCompat.Button.Colored"
+
+    android:textAlignment="center"
+    android:gravity="center"
+    android:drawableEnd="@drawable/ic_chevron_right_blue_grey_900_48dp"
+    android:paddingStart="10dp"
+    android:drawableStart="@drawable/mobi"
+    android:paddingTop="12dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="12dp"
+    android:textSize="20sp"-->
+
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:minHeight="150dp"
+        app:strokeWidth="2dp"
+
+        android:layout_marginRight="10dp"
+
+        android:layout_marginTop="26dp"
+        android:layout_below="@id/but2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center"
+
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:onClick="Rewards"
+
+            >
+
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/giftpx" />
+            <TextView
+                android:layout_width="67dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:text="Loyalty Offers"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:onClick="OH"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/oder"
+
+
+                />
+            <TextView
+                android:layout_width="65dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:layout_marginTop="8dp"
+
+                android:layout_height="wrap_content"
+                android:text="Recent Orders"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:onClick="Assist"
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help"
+
+
+                />
+            <TextView
+                android:layout_width="67dp"
+                android:textAllCaps="true"
+                android:layout_height="match_parent"
+                android:text="Assist ance"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
+</ScrollView>

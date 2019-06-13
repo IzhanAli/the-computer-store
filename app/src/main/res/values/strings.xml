@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TheComputerStore-Demo</string>
+    <string name="todo">TODO</string>
+    <string name="lenovo">Lenovo</string>
+    <string name="hp">HP</string>
+    <string name="acer">Acer</string>
+    <string name="dell">Dell</string>
+    <string name="asus">Asus</string>
+    <string name="samsung">Samsung</string>
+    <string name="mi">Xiaomi</string>
+    <string name="huawei">Huawei</string>
+    <string name="compcontnet">From hi-end desktops to powerful laptops, we have the back for your bulk requirements</string>
+    <string name="mobcontent">Corporate mobile providing for employees now made easy</string>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderHistory">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="1.3dp"
+
+        android:id="@+id/listorders">
+    </ListView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/imgmt"
+        android:layout_height="wrap_content"
+android:alpha="100"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_sentiment_neutral_grey_500_36dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:id="@+id/txtmt"
+        android:alpha="155"
+        android:layout_height="wrap_content"
+        android:text="You have not placed any order"/>
+</LinearLayout>
+
+
+</RelativeLayout>

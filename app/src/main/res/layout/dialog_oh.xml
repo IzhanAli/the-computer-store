@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:textAlignment="viewStart"
+    android:textSize="14sp"
+    android:id="@+id/tvitem"
+    android:text="Item: HonorXXX Smartphone "
+    android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+
+        android:textSize="14sp"
+        android:textAlignment="viewStart"
+        android:id="@+id/tvprice"
+        android:text="Item: HonorXXX Smartphone "
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+
+        android:textSize="14sp"
+        android:textAlignment="viewStart"
+        android:id="@+id/tvquantity"
+        android:text="Item: HonorXXX Smartphone "
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+
+        android:textSize="14sp"
+        android:textAlignment="viewStart"
+        android:id="@+id/tvaddr"
+        android:text="Item: HonorXXX Smartphone "
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+
+        android:textSize="14sp"
+        android:textAlignment="viewStart"
+        android:id="@+id/tvemail"
+        android:text="Item: HonorXXX Smartphone "
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+
+        android:textSize="14sp"
+        android:textAlignment="viewStart"
+        android:id="@+id/tvname"
+        android:text="Item: HonorXXX Smartphone "
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+
+        android:textSize="14sp"
+        android:textAlignment="viewStart"
+        android:id="@+id/tvtime"
+        android:text="Item: HonorXXX Smartphone "
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+
+        android:textSize="14sp"
+        android:textAlignment="viewStart"
+        android:id="@+id/tvid"
+        android:text="Item: HonorXXX Smartphone "
+        android:textColor="@color/black"/>
+
+
+
+</LinearLayout>
